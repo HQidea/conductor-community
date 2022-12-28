@@ -9,7 +9,7 @@ dependencies {
     implementation "com.netflix.conductor:conductor-core:${revConductor}"
     implementation "com.netflix.conductor:conductor-redis-persistence:${revConductor}"
     implementation "com.netflix.conductor:conductor-cassandra-persistence:${revConductor}"
-    implementation "com.netflix.conductor:conductor-es6-persistence:${revConductor}"
+    implementation project(":index:conductor-es7-persistence")
     implementation "com.netflix.conductor:conductor-grpc-server:${revConductor}"
     implementation "com.netflix.conductor:conductor-redis-lock:${revConductor}"
     implementation "com.netflix.conductor:conductor-redis-concurrency-limit:${revConductor}"
